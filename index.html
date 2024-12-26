@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container" >
+       <h1>General Quiz</h1>
+        <form id="quiz">
+           <div class="question" id="question1">
+            <p>1. What is the capital of France?</p>
+            <input type="radio" id="q1a" name="q1" value="paris" onclick="nextQuestion(1)">
+            <lable for="q1a" >Paris</lable></br>
+            <input type="radio" id="q1b" value="London" name="q1" onclick="nextQuestion(1)">
+            <lable for="q1b">London</lable></br>
+            <input type="radio" id="q1c" name="q1" value="Berlin" onclick="nextQuestion(1)">
+            <label for="q1c">Berlin</label><br>
+    </div>
+   <div class="question" id="question2" style="display:none;">
+    <p>2. What is 2 + 2?</p>
+    <input type="radio" id="q2a" name="q2" value="3" onclick="nextQuestion(2)">
+    <label for="q2a">3</label><br>
+    <input type="radio" id="q2b" name="q2" value="4" onclick="nextQuestion(2)">
+    <label for="q2b">4</label><br>
+    <input type="radio" id="q2c" name="q2" value="5" onclick="nextQuestion(2)">
+    <label for="q2c">5</label><br>
+   </div>
+   <div class="question" id="question3" style="display:none;">
+       <p>3. Who is the CEO of Tesla?</p>
+       <input type="radio" id="q3a" name="q3" value="Elon Musk" onclick="nextQuestion(3)">
+       <label for="q3a">Elon Musk</label><br>
+       <input type="radio" id="q3b" name="q3" value="Jeff Bezos" onclick="nextQuestion(3)">
+       <label for="q3b">Jeff Bezos</label><br>
+       <input type="radio" id="q3c" name="q3" value="Bill Gates" onclick="nextQuestion(3)">
+       <label for="q3c">Bill Gates</label><br>
+   </div>
+   <div id="submit" style="display:none;">
+    <button type="button" onclick="submitQuiz()">Submit</button>
+  </div>
+        </form> 
+        <div id="result" class="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
